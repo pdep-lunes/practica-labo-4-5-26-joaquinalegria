@@ -33,8 +33,8 @@ regalar unRegalo unPerro = unRegalo : (juguetesFavs unPerro)
 
 diaDeSpa::Ejercicio
 diaDeSpa unPerro
-|unTiempo unPerro > 50 = (regalar "peine de goma" . modificarEnergia (const 100)) unPerro
-|raza unPerro == esDeRazaExtravagante =  (regalar "peine de goma" . modificarEnergia (const 100)) unPerro
+|(unTiempo unPerro) > 50 = (regalar "peine de goma" . modificarEnergia (const 100)) unPerro
+|(raza unPerro) == esDeRazaExtravagante =  (regalar "peine de goma" . modificarEnergia (const 100)) unPerro
 |otherwise unPerro
 
 esDeRazaExtravagante::Perro->Bool
