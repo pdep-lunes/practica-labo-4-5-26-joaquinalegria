@@ -29,7 +29,7 @@ ladrar ladridosEstablecidos unPerro = modificarEnergia (div ladridosEstablecidos
 
 regalar::String->Ejercicio
 regalar unRegalo unPerro = unRegalo : (juguetesFavs unPerro)
--- Nose si está bien usado la funcion "Preceder"
+-- Nose si está bien usado la funcion ":"
 
 diaDeSpa::Ejercicio
 diaDeSpa unPerro
